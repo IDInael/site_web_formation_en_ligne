@@ -1,0 +1,3 @@
+view : html, css, javascript coté front-end
+controller : php (action relative au bouton de la vue)
+modele : extraction, insertion, modification, mise a jour des informations dans la base de données.

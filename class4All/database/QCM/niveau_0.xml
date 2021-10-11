@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation>
+	<qcm>
+		<question>qu'est ce que le php ?</question>
+		<reponse>langage de programmation</reponse>
+		<proposition1>un framework</proposition1>
+		<proposition2>un livre</proposition2>
+		<proposition3>un film</proposition3>
+	</qcm>
+
+	<qcm>
+		<question>Fonction javascript :</question>
+		<reponse>getElementById</reponse>
+		<proposition1>session_start()</proposition1>
+		<proposition2>run()</proposition2>
+		<proposition3>public static void</proposition3>
+	</qcm>
+
+	<qcm>
+		<question>Un exemple d'IDE</question>
+		<reponse>Sublime Text</reponse>
+		<proposition1>atome</proposition1>
+		<proposition2>youtube</proposition2>
+		<proposition3>google</proposition3>
+	</qcm>
+
+	<qcm>
+		<question>la négation en informatique :</question>
+		<reponse>!</reponse>
+		<proposition1>non</proposition1>
+		<proposition2>ne ... pas</proposition2>
+		<proposition3>nicth</proposition3>
+	</qcm>
+
+	<qcm>
+		<question>Un langage de programmation fonctionnel</question>
+		<reponse>PROLOG</reponse>
+		<proposition1>Java</proposition1>
+		<proposition2>C#</proposition2>
+		<proposition3>C++</proposition3>
+	</qcm>
+
+<qcm><question>Qu'est ce que Linux ?</question><reponse>Systeme d'exploitation</reponse><proposition1>jeu video</proposition1><proposition2>marque d'ordinateur</proposition2><proposition3>personnage celebre</proposition3></qcm><qcm><question>Comment on dit informatique en anglais</question><reponse>computer science</reponse><proposition1>informatics</proposition1><proposition2>digital</proposition2><proposition3>computer</proposition3></qcm></evaluation>

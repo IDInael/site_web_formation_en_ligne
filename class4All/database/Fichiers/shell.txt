@@ -1,0 +1,74 @@
+> $# : nombre d'élément courant (parametre)
+> $* : liste des elements
+> $0 : nom de la cmd courante
+> $1 : premier element de la liste
+> $$ : PID du cmd courant
+> $! : PID du dernier processus en arriere plan lancé
+> shift : supprime le premier element de la liste et fait un decalage vers la gauche
+
+booleen 0 si vrai et autre si faux
+
+test | - f fichier
+	 | -d repertoire
+	 | -r <chemin> en lecture
+	 | -w en ecriture
+	 | -s de taille >0
+
+test int1 | -eq int2 (==)
+		  | -ge int2 (>=)
+		  | -gt int2 (>)
+		  | -le int2 (<=)
+		  | -lt int2 (<)
+		  | -ne int2 (!=)
+
+|| : -o (ou logique)
+&& : -a (et logique)
+
+> 'expr nb1 [+ - \* / < <=] nb2
+> expr mot1 : mot2 ==> renvoie la longueur de la chaine sur laquel les deux mots coincident
+
+META-CARACTERE : à utiliser pour egrep, grep, expr, vi, sed, awk
+^ debut de ligne
+$ fin de ligne
+. remplace un caracter
+* 0 à n fois le caractere le precedant
+[] ensemble de caractere utilisable
+{} indique le nombre d'occurence autorisé, prefixé par \ exemple a\{3,4\} definit aaa ou aaaa
+() donne des numeros d'ordre au mots
+
+CONDITION
+
+if <condition>
+then
+	<epxression>
+elif <condition>
+	<expression>
+else
+	<expression>
+fi
+
+case <mot> in
+	cas1 ) <expression>
+	;;
+
+	cas2 ) <expression
+	;;
+esac
+
+while <ondition>
+do
+	<tache>
+done
+
+for <nom> in [liste de mot]
+do
+	<tache>
+done
+
+
+FONCTION 
+
+nomfonction()
+{
+	<code>
+}

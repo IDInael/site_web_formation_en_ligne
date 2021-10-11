@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<forums>
+	<forum>
+	  <publication>
+	    <auteur>idi nael</auteur>
+	    <message>ceci est encore un test</message>
+	  </publication>
+	<publication>
+		<auteur>moi</auteur>
+		<message>rien</message>
+	</publication>
+	<publication><auteur>moi 
+</auteur><message>rien de nouveau 
+</message></publication><publication><auteur>moi</auteur><message>rien de nouveau</message></publication><publication><auteur>moi</auteur><message>rien de nouveau</message></publication><publication><auteur>moi</auteur><message>rien de nouveau</message></publication></forum>
+</forums>

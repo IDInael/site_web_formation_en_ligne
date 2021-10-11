@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>s'inscrire</title>
+	<script type="text/javascript" src="style/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/css/home.css">
+	<link rel="stylesheet" type="text/css" href="style/css/footer.css">
+	<script type="text/javascript" src="../Controller/header.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style/css/inscription.css">
+	<link rel="stylesheet" type="text/css" href="style/css/connection.css">
+
+	<script type="text/javascript" src="../Controller/inscription.js"></script>
+</head>
+<body>
+	<header id="logo_holder">
+		
+	</header>
+	<div id="body">
+		
+		<form id="formulaire_inscription" class="formulaire" method="post">
+			<p><label for="nom">Nom : </label><input class="valeur_input" type="text" name="nom" required="required"></p>
+			<p><label for="prenom">Prenom : </label><input class="valeur_input" type="text" name="prenom"></p>
+			<p><label for="mail">Email : </label><input class="valeur_input" type="email" name="mail" required="required"></p>
+			<p><label for="mdp">Mots de passe : </label><input class="valeur_input" type="password" id="mdp" name="mdp" required="required" minlength="8"></p>
+			<p><label for="mdp2">Confirmation mots de passe : </label><input class="valeur_input" id="mdp2" type="password" name="mdp2" required="required"></p>
+			<p><input type="radio" id="Enseignant" name="table" value="Enseignant"><label for="Enseignant">je suis enseignant</label></p>
+			<p><input type="radio" id="Etudiant" name="table" value="Etudiant" checked="checked"><label for="Etudiant">je suis etudiant</label></p>
+			<p>
+				<input class="bouton" type="submit" value="M'inscrire"> 
+			</p>
+
+		</form>
+		<div id="erreur_msg">
+			
+		</div>
+	</div>
+	<footer>
+		
+	</footer>
+</body>
+</html>

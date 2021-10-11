@@ -1,0 +1,406 @@
+#navigation
+{
+  position: relative;
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  z-index: 1;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  vertical-align: middle;
+  text-align: center;
+  align-content: center;
+}
+
+#navigation div
+{
+	display: inline-block;
+	margin:auto;
+}
+
+/*#utilisateur
+{
+	position: relative;
+	right: 15%;
+}*/
+
+
+
+.body_fils
+{
+	display: inline-block;
+	margin-left: 1em;
+	padding: 0.5em;
+  width: 100%;
+}
+
+
+/*barre de recherhe*/
+.search {
+  width: 70%;
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+}
+
+.searchTerm {
+  width: 85%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+	  bottom: .2em;
+	  right: .2em;
+}
+
+#btn_rechercher
+{
+
+	  background-image: url("../../media/image/search.ico");
+	  background-repeat: no-repeat;
+	  background-size: 80% 80%;
+	  background-position: center;
+}
+
+#btn_option
+{
+	border-radius: 5px;
+	margin-left: 2em;
+	  background-image: url("../../media/image/option.ico");
+	  background-repeat: no-repeat;
+	  background-size: 80% 80%;
+	  background-position: center;
+}
+
+/*barre de navigation gauche*/
+a,li{
+    margin: 0;
+    padding: 0;
+    font-family: 'lato';
+    list-style: none;
+    text-decoration: none;
+}
+
+.mainMenu{
+    width: 250px;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item{
+    border-top: 1px solid #ef584a;
+    overflow: hidden;
+}
+
+.btn{
+    display: block;
+    padding: 15px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    position: relative;
+
+}
+
+.btn:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:10px solid #ff6f61;
+    right: 15px;
+    bottom: -10px;
+    z-index: 9;
+    
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.subMenu{
+    background: #273057;
+    overflow: hidden;
+    transition: max-height 0.7s;
+    max-height: 0;
+}
+
+.subMenu a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #394c7f;
+    position: relative;
+    
+}
+
+
+.subMenu a:before{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.subMenu a:hover:before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    left: 0;
+    top:0;
+    opacity: 1;
+    /* background-color: #d8d824; */
+    border-top: 24px solid transparent;
+    border-left: 11px solid rgb(254,254,254);
+    border-bottom: 24px solid transparent;
+}
+.subMenu a:after{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.subMenu a:hover:after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    right: 0px;
+    top:0;
+    opacity: 1;
+    /* background-color: #d8d824; */
+    border-top: 24px solid transparent;
+    border-right: 11px solid rgb(254,254,254);
+    border-bottom: 24px solid transparent;
+}
+.subMenu a:hover{
+    background: #273057;
+    transition: all 0.3s;
+    border-bottom: 1px solid #394c7f;
+}
+.subMenu a:last-child{
+    border:none;
+}
+.item:target .subMenu{
+    max-height: 10em;
+}
+
+/*COPRS*/
+
+#body {
+  font-family: 'Poppins', sans-serif; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  font-size: 1.3rem;
+  background-color:rgb(240,254,254,0.6);
+  text-align: center;
+}
+
+#option
+{
+	position: fixed;
+	right: 7em;
+	top: 10em;
+	z-index: 3;
+	background-color: transparent;
+	vertical-align: middle;
+	padding:0;
+}
+
+/*cours suivi*/
+
+#centrale
+{
+	margin: auto;
+  width: 75%;
+	text-align: left;
+}
+
+.mes_cours, .cours_r
+{
+	display: inline-block;
+	/*background-color: rgb(254,254,254);*/
+
+	margin: auto;
+	margin-left: 2%;
+	overflow: hidden;
+
+	box-sizing: border-box;
+	width: 30%;
+	text-align: center;
+	vertical-align: middle;
+
+	margin-bottom: 2%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#cours_suivi h2
+{
+	border-bottom: 5px solid black;
+	margin-bottom: .5em;
+}
+
+#cours_suivi p
+{
+	font-size: .9em;
+}
+
+#resultat_recherche
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  background-color:rgb(254,254,254);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+#fermer_diag
+{
+	color: black;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 128px;
+	height: 128px;
+	font-size: 5em;
+	border:none;
+	z-index: 11;
+	background-image: url("../../media/image/close.ico");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/**modification et consutation de profil*/
+
+#modification {
+  font-family: 'Poppins', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 1.5rem;
+  background-color:rgb(240,254,254,0.6);
+  position: fixed;
+  top: 5%;
+  width: 100%;
+  background-color: rgb(238,238,238,0.99);
+  z-index: 10;
+}
+
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
+.formulaire {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.valeur_input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgb(19,51,110);
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .texte {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.texte {
+ /* position: absolute;*/
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  color: rgb(19,51,110);
+}
+
+
+.valeur_input:focus {
+  ~ .texte {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: red;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+
+/* reset input */
+.valeur_input{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.button
+{
+  font-size: 1em;
+  padding:.5em 1em;
+  border-radius: 10px;
+  color: rgb(254,254,254);
+  background-color: rgb(19,51,110);
+}
+
+a
+{
+  text-decoration: none;
+}
+
+

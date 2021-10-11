@@ -1,0 +1,166 @@
+#formulaire {
+  font-family: 'Poppins', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  font-size: 1.5rem;
+  background-color:rgb(254,254,254);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.formulaire {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.valeur_input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgb(19,51,110);
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .texte {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.texte {
+ /* position: absolute;*/
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  color: rgb(19,51,110);
+}
+
+
+.valeur_input:focus {
+  ~ .texte {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: red;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+
+/* reset input */
+.valeur_input{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.formulaire textarea
+{
+  border:2px solid rgb(19,51,110);
+}
+
+#centrale
+{
+  position: relative;
+  vertical-align: top;
+  height: 80vh;
+  width: 100%;
+}
+#centrale .fils
+{
+  display: inline-block;
+    height: inherit;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 2em;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.gauche
+{
+  width: 20%;
+  float: left;
+  margin-left: 0;
+
+  margin-right: 5em;
+  border:3px solid green;
+  border-radius: 5px;
+  text-align: center;
+}
+.gauche button
+{
+  display: flex;
+  width: 100%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 27%;
+
+  font-size: 0.9em;
+  border:0.5px solid rgb(254,254,254);
+  border-radius: 5px;
+  color: rgb(254,254,254);
+  background-color: rgb(19,51,110);
+}
+
+#contenu
+{
+  width: 60%;
+  overflow: scroll;
+  max-height: 90vh;
+  right: 0;
+}
+
+.title
+{
+  border-bottom: 3px solid rgb(19,51,110);
+}
+
+.fichier:before
+{
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-image: url("../../media/image/download.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -15px;
+    background-position-y:bottom; 
+    padding-right: .3em;
+}
+
+.fichier
+{
+  padding-left: .5em;
+}
+
+ol .liste_etu
+{
+  list-style-type: decimal;
+  text-align: left;
+}

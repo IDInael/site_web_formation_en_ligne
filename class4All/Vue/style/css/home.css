@@ -1,0 +1,144 @@
+body
+{
+	margin: 0;
+	background: rgb(235,231,219);
+}
+.theme{
+	height: 5em;
+	background-color: rgb(235,231,219);
+	text-align: center;
+	}
+
+.theme span{
+	margin: auto;
+	display: inline-block;	
+	height: 100%;
+}
+.titre
+{
+	color: rgb(19,51,110);
+	letter-spacing: 0.1em;
+	font-size: 3em;
+	vertical-align: top;
+	padding-top: 0.25em;
+
+}
+
+#logo
+{
+	width: 3.5em;
+	height: 100%;
+	font-size: 3em;
+	background-color: rgb(19,51,110);
+	text-align: center;		
+}
+
+#welcom
+{
+	width: 100%;
+	color: rgb(19,51,110);
+	letter-spacing: 10px;
+	font-size: 6em;
+	font-weight: bolder;
+	font-style: oblique 20deg;
+	vertical-align: top;
+	padding-top: 1em;
+
+}
+#welcom_titre
+{
+	width: 100%;
+	color: rgb(19,51,110);
+	letter-spacing: 10px;
+	font-size: 4em;
+	font-weight: bolder;
+	font-style: oblique;
+	vertical-align: top;
+	padding-top: .5em;
+
+}
+.hexagone:before
+{
+	content: "4";
+	position: relative;
+	font-size:  1.9em;
+	font-style: bold;
+	color: rgb(240,254,254);
+	box-sizing : border-box;
+	left: 35%;
+	bottom: 15%;
+}
+.hexagone:after {
+	content : "";
+  box-sizing : border-box;
+  position : relative;
+  border-left : 1.756em solid transparent;
+  border-right : 1.756em solid transparent;
+  top : 90.5%;
+  right: 27%;
+  border-top : 33px solid rgb(19,51,110);
+  z-index: 2;
+}
+
+
+#information
+{
+	width: 490px;
+	height: auto;
+	background-color: #F1A41D;
+	padding:1em;
+	left: 15%;
+	top: 64.7%;
+	position: absolute;
+	bottom: 0;
+}
+
+#information p
+{
+	text-align: justify;
+	padding-left: 0.5em;
+	padding-right: 2em;
+}
+
+.welcom span
+{
+	display: block;
+}
+
+.connexion
+{
+	display: inline-block;
+	margin-right: 0%;
+	margin-left: 20%;
+}
+
+button, .bouton
+{
+	font-size: 1em;
+	padding:.5em 1em;
+	border-radius: 10px;
+	color: rgb(254,254,254);
+	background-color: rgb(19,51,110);
+}
+
+#corps {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  background-color:rgb(240,254,254,0.6);
+  background-image: url(../../media/image/math.jpg);
+	background-size: contain;
+
+}
+
+#welcom
+{
+	margin: auto;
+}
+
+
+
